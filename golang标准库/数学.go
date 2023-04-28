@@ -87,4 +87,5 @@ func main() {
 	TestAbs()
 	TestMod()
 	TestTrunc()
+	//TestFloor()
 }
