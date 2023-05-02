@@ -9,12 +9,12 @@ import "math"
 func powerfulIntegers(x int, y int, bound int) (ans []int) {
 	set := map[int]struct{}{}
 	for i := 0; i < 21; i++ {
-		v1 := int(math.Pow(float64(x), float64(i)))
+		v1 := pow(x, i)
 		if v1 > bound {
 			break
 		}
 		for j := 0; j < 21; j++ {
-			sum := v1 + int(math.Pow(float64(y), float64(j)))
+			sum := v1 + pow(y, j)
 			if sum > bound {
 				break
 			}
@@ -25,6 +25,10 @@ func powerfulIntegers(x int, y int, bound int) (ans []int) {
 		}
 	}
 	return ans
+}
+
+func pow(a, b int) int {
+	return int(math.Pow(float64(a), float64(b)))
 }
 
 func main() {
