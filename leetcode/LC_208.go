@@ -2,7 +2,7 @@ package main
 
 /*
 *
-208. 实现 Trie (前缀树)
+208. 实现 Trie (前缀树) OVO
 */
 type Trie struct {
 	son   [26]*Trie
