@@ -1,8 +1,9 @@
 package main
 
 /*
-*2432. 处理用时最长的那个任务的员工
- */
+*
+2432. 处理用时最长的那个任务的员工
+*/
 func hardestWorker(n int, logs [][]int) (ans int) {
 	ans = logs[0][0]
 	max := logs[0][1]
