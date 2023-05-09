@@ -47,4 +47,5 @@ func countTime(time string) int {
 
 func main() {
 	fmt.Println(countTime("??:??"))
+	fmt.Println("??:23")
 }
