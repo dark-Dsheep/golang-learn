@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 *
 2437. 有效时间的数目
@@ -44,5 +46,5 @@ func countTime(time string) int {
 }
 
 func main() {
-
+	fmt.Println(countTime("??:??"))
 }
