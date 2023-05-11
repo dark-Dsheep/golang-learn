@@ -12,18 +12,19 @@ func queryString(s string, n int) bool {
 	//}
 	//return true
 
+	// 枚举s的子串(二进制数),保存在set中,如果size(set)==n说明s的子串符合条件
 	vis := map[int]struct{}{}
 	for i, b := range s {
 		x := int(b - '0')
-		if x == 0 {
+		if x == 0 { // 二进制从 1开始 s=0110等价于110
 			continue
 		}
-		for j := i + 1; x <= n; i++ {
+		for j := i + 1; x <= n; j++ {
 			vis[x] = struct{}{}
 			if j == len(s) {
 				break
 			}
-			x = x<<1 | int(s[j]-'0')
+			x = x<<1 | int(s[j]-'0') // 子串[i,j]的二进制数
 		}
 	}
 	return len(vis) == n
