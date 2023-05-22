@@ -16,3 +16,7 @@ func makeSmallestPalindrome(S string) (ans string) {
 	ans = string(s)
 	return
 }
+
+func main() {
+
+}

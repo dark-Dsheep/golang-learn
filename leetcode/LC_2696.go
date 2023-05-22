@@ -15,3 +15,7 @@ func minLength(s string) (ans int) {
 	ans = len(st)
 	return
 }
+
+func main() {
+
+}

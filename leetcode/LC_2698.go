@@ -33,3 +33,7 @@ func init() { // 预处理
 func punishmentNumber(n int) int {
 	return preSum[n]
 }
+
+func main() {
+
+}
