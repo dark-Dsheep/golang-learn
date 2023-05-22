@@ -22,3 +22,7 @@ func combinationSum(candidates []int, target int) (ans [][]int) {
 	dfs(0, target)
 	return ans
 }
+
+func main() {
+
+}

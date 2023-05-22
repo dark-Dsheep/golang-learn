@@ -17,3 +17,7 @@ func dailyTemperatures(t []int) []int {
 	}
 	return ans
 }
+
+func main() {
+
+}
